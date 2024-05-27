@@ -28,6 +28,7 @@ return {
         "prettierd",
         "typescript-language-server",
         "tailwindcss-language-server",
+        "phpactor"
       },
     },
   },
@@ -45,6 +46,6 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
+    build = function() require('nvim-treesitter.install').update({ with_sync = true })() end,
   }
 }
