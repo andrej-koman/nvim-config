@@ -43,4 +43,12 @@ return {
       require("nvim-treesitter.install").update { with_sync = true }()
     end,
   },
+  {
+    "ThePrimeagen/vim-be-good",
+    event = "VeryLazy"
+  },
+  {
+    "github/copilot.vim",
+    lazy = false
+  }
 }
