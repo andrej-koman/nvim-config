@@ -22,6 +22,7 @@ return {
         "typescript-language-server",
         "tailwindcss-language-server",
         "phpactor",
+        "omnisharp",
       },
     },
   },
@@ -45,10 +46,10 @@ return {
   },
   {
     "ThePrimeagen/vim-be-good",
-    event = "VeryLazy"
+    event = "VeryLazy",
   },
   {
     "github/copilot.vim",
-    lazy = false
-  }
+    lazy = false,
+  },
 }
