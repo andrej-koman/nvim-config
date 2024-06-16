@@ -20,7 +20,7 @@ lspconfig.omnisharp.setup {
   on_attach = on_attach,
   on_init = on_init,
   capabilities = capabilities,
-  cmd = { "sh" , "/home/andrej/.local/share/nvim/mason/bin/omnisharp" },
+  cmd = { "sh", "/home/andrej/.local/share/nvim/mason/bin/omnisharp" },
   filetypes = { "cs" },
-  root_dir = lspconfig.util.root_pattern("*.sln"),
+  root_dir = lspconfig.util.root_pattern { "*.sln", "Program.cs" },
 }
